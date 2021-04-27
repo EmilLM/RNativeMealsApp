@@ -1,0 +1,9 @@
+1. Research how to avoid landingscreen load on user.AuthStateChanged()
+2.Loader affects bottom tab nav.
+3. Add range selector for radius
+4. Add type of restaurant in description
+5. Fix rating re-rendering problem
+6.Add menu items
+7. password reset
+8. add skeleton ui as a loader
+9. map error handle when theres no data 

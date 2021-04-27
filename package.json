@@ -1,5 +1,9 @@
 {
   "main": "node_modules/expo/AppEntry.js",
+  "license": "MIT",
+  "author": "Luchian Emil",
+  "description": "Restaurant finder and meal app",
+  "repository": "https://github.com/EmilLM/RNativeMealsApp",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",

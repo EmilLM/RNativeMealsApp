@@ -4,8 +4,8 @@ import { GOOGLE_KEY } from '../../../config.env';
 
 const api = {
 	// add = !!!!!!!!
-	// geocode: 'https://maps.googleapis.com/maps/api/geocode/json?address=',
-	geocode: 'https://maps.googleapis.com/maps/api/geocode/json?address',
+	geocode: 'https://maps.googleapis.com/maps/api/geocode/json?address=',
+	// geocode: 'https://maps.googleapis.com/maps/api/geocode/json?address',
 	key: GOOGLE_KEY,
 };
 const { geocode, key } = api;

@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import { Button } from 'react-native-paper';
+import {colors} from '../../utils/theme/colors'
 
 export const AccountBg = styled.ImageBackground.attrs({
 	source: require('../../../assets/home_bg.webp'),
@@ -30,7 +31,7 @@ export const CustomButton = styled(Button).attrs({
 		width: '100%',
 		padding: 8,
 	},
-	color: 'white',
+	color: colors.text.inverse,
 })`
 	margin: ${(props) => props.theme.sizes[2]}
 	background-color: ${(props) => props.theme.colors.brand.primary};

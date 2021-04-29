@@ -5,6 +5,7 @@ import { TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect } from '@react-navigation/native';
 
+import {colors} from '../../../utils/theme/colors'
 import { AuthContext } from '../../../services/auth/auth.context';
 import SafeArea from '../../general/safe-area/SafeArea';
 import Text from '../../general/text/Text';
@@ -30,7 +31,7 @@ const SettingScreen = ({ navigation }) => {
 				<TouchableOpacity onPress={() => navigation.navigate('Camera')}>
 					<AvatarContainer>
 						{!photo ? (
-							<Avatar.Icon size={100} icon='camera' backgroundColor='#2182bd' />
+							<Avatar.Icon size={100} icon='camera' backgroundColor={colors.brand.primary} />
 						) : (
 							<Avatar.Image size={100} source={{ uri: photo }} />
 						)}
@@ -42,8 +43,14 @@ const SettingScreen = ({ navigation }) => {
 					<SettingsItem
 						title='Favourites'
 						titleStyle={{ fontSize: 20 }}
-						left={() => <List.Icon color='#2182bd' icon='heart' />}
+						left={() => <List.Icon color={colors.brand.primary} icon='heart' />}
 						onPress={() => navigation.navigate('Favourites')}
+					/>
+					<SettingsItem
+						title='Order history'
+						titleStyle={{ fontSize: 20 }}
+						left={() => <List.Icon color={colors.brand.primary} icon='history' />}
+						onPress={() => null}
 					/>
 
 					<SettingsItem

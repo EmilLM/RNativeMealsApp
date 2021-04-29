@@ -16,7 +16,7 @@ export const AccountCover = styled.View`
 	height: 100%;
 	background-color: rgba(255, 255, 255, 0.3);
 `;
-export const Container = styled.View`
+export const 	Container = styled.View`
     background-color: rgba(255, 255, 255, 0.7);
     padding: ${(props) => props.theme.sizes[4]};
     margin-top: ${(props) => props.theme.sizes[2]}

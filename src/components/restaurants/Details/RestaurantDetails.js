@@ -12,7 +12,7 @@ const RestaurantDetails = ({ navigation, route }) => {
 	const { restaurant } = route.params;
 	const { addToCart } = useContext(CartContext);
 	const buySpecial = () => {
-		addToCart({ item: 'special', price: 1299 }, restaurant);
+		addToCart({ item: 'Special', price: 1299 }, restaurant);
 		navigation.navigate('Checkout');
 	};
 	return (

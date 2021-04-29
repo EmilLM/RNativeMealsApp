@@ -11,7 +11,7 @@ const FavouritesBar = ({ navigation }) => {
 	const hasFavourites = favourites.length > 0;
 
 	return (
-		<FavouritesWrapper>
+		<FavouritesWrapper elevation={3}>
 			<Text variant='favLabel'>Favourites</Text>
 			{hasFavourites ? (
 				<ScrollView

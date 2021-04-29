@@ -41,6 +41,12 @@ const favLabel = (theme) => `
     font-weight: ${theme.fontWeights.bold};
     margin-left: 16px;
 `;
+const orderHeader = (theme) => `
+    font-family: ${theme.fonts.heading};
+    font-size: ${theme.fontSizes.title};
+    font-weight: ${theme.fontWeights.medium};
+    margin-left: 8px;
+`;
 const restaurantLabel = (theme) => `
     font-family: ${theme.fonts.heading};
     font-size: ${theme.fontSizes.label};
@@ -52,6 +58,13 @@ const title = (theme) => `
     font-family: ${theme.fonts.heading};
     font-size: ${theme.fontSizes.title};
     font-weight: ${theme.fontWeights.bold};
+`;
+const cartTotal = (theme) => `
+    font-family: ${theme.fonts.heading};
+    font-size: ${theme.fontSizes.title};
+    font-weight: ${theme.fontWeights.bold};
+    margin-bottom: 8px;
+    margin-left: 8px;
 `;
 const transparent = (theme) => `
     font-family: ${theme.fonts.heading};
@@ -78,6 +91,8 @@ const variants = {
 	favLabel,
 	button,
 	mainTitle,
+    orderHeader,
+    cartTotal
 };
 
 const Text = styled.Text`

@@ -1,6 +1,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+import {colors} from '../../../utils/theme/colors'
 import { screenOptions } from '../../../utils/screenOptions/screenOptions';
 import MapScreen from '../../map/screen/MapScreen';
 import CheckoutScreen from '../../checkout/CheckoutScreen';
@@ -23,8 +24,8 @@ export default function AppNavigation() {
 						<Tab.Navigator
 							screenOptions={screenOptions}
 							tabBarOptions={{
-								activeTintColor: 'navy',
-								inactiveTintColor: 'gray',
+								activeTintColor: colors.brand.primary,
+								inactiveTintColor: colors.ui.secondary,
 								labelStyle: { fontSize: 14 },
 								tabStyle: { marginBottom: 4, marginTop: 4 },
 							}}

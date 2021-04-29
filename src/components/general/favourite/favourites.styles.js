@@ -1,8 +1,10 @@
 import styled from 'styled-components/native';
+import { Card } from 'react-native-paper';
 import { TouchableOpacity } from 'react-native';
 
-
-export const FavouritesWrapper = styled.View``;
+export const FavouritesWrapper = styled(Card)`
+	z-index: 999;
+`;
 export const EmptyFavContainer = styled.View`
 	padding: 10px;
 	height: 120px;

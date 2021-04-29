@@ -19,7 +19,7 @@ const ChangePasswordForm = () => {
 	useEffect(() => {
 		// to prevent error message being show after form reset
 		setError('');
-	}, [password, repeatPassowrd]);
+	}, [password, repeatPassword]);
 	return (
 		<>
 			<TextInput

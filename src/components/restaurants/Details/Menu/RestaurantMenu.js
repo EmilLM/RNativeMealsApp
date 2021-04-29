@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { List } from 'react-native-paper';
+import { List, Divider } from 'react-native-paper';
 import { ScrollView } from 'react-native';
 
 const RestaurantMenu = () => {
@@ -15,27 +15,22 @@ const RestaurantMenu = () => {
 				expanded={openBreakfast}
 				onPress={() => setOpenBreakfast(!openBreakfast)}
 			>
-				<List.Item title='First item' />
-				<List.Item title='Second item' />
-				<List.Item title='Third item' />
-				<List.Item title='Fourth item' />
-				<List.Item title='Fifth item' />
-				<List.Item title='a item' />
-				<List.Item title='b item' />
-				<List.Item title='c item' />
-				<List.Item title='d item' />
-				<List.Item title='e item' />
+				<List.Item title='Eggs Benedict' />
+				<List.Item title='Classic Breakfast' />
 			</List.Accordion>
-
+			<Divider />
 			<List.Accordion
 				title='Lunch'
 				left={(props) => <List.Icon {...props} icon='food' />}
 				expanded={openLunch}
 				onPress={() => setOpenLunch(!openLunch)}
 			>
-				<List.Item title='First item' />
-				<List.Item title='Second item' />
+				<List.Item title='Burger w/ Fries' />
+				<List.Item title='Steak Sandwich' />
+				<List.Item title='Mushroom Soup' />
 			</List.Accordion>
+			<Divider />
+			<Divider />
 
 			<List.Accordion
 				title='Dinner'
@@ -43,9 +38,11 @@ const RestaurantMenu = () => {
 				expanded={openDinner}
 				onPress={() => setOpenDinner(!openDinner)}
 			>
-				<List.Item title='First item' />
-				<List.Item title='Second item' />
+				<List.Item title='Spaghetti Bolognese' />
+				<List.Item title='Veal Cutlet with Chicken Mushroom Rotini' />
+				<List.Item title='Steak Frites' />
 			</List.Accordion>
+			<Divider />
 
 			<List.Accordion
 				title='Drinks'
@@ -53,8 +50,11 @@ const RestaurantMenu = () => {
 				expanded={openDrinks}
 				onPress={() => setOpenDrinks(!openDrinks)}
 			>
-				<List.Item title='First item' />
-				<List.Item title='Second item' />
+				<List.Item title='Coffee' />
+				<List.Item title='Tea' />
+				<List.Item title='Modelo' />
+				<List.Item title='Wine' />
+				<List.Item title='Beer' />
 			</List.Accordion>
 		</ScrollView>
 	);
